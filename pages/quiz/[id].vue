@@ -13,9 +13,7 @@
     <p class="text-lg font-medium">Class: <span class="font-semibold text-yellow-300">12th Grade - Science</span></p>
   </div>
 </div>
-
-
-      <!-- Question List with Clickable Links -->
+<div v-if="!quizFinished">
       <div class="mb-6">
         <div class="text-center mb-4 text-lg font-semibold text-gray-700">
           Questions
@@ -81,7 +79,7 @@
           </label>
         </div>
       </div>
-
+    </div>
       <!-- Bottom Navigation -->
       <div class="fixed bottom-0 left-0 w-full bg-white shadow-lg py-3 flex justify-between items-center px-6">
         <button 
